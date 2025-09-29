@@ -12,6 +12,7 @@ public class Senha_Concessionaria {
 		int carro;
 		int pagamento;
 		int quantidade;
+		int sair;
 		String nome;
 		String telefone;
 		String endereco;
@@ -39,7 +40,7 @@ public class Senha_Concessionaria {
 		
 		do {
 		System.out.println("\n------MENU------");
-		System.out.println("\nEscolha uma opcao:\n1 - Cadastro\n2 - Comprar seu carro\n3 - Comprar seu acessorio\n ");
+		System.out.println("\nEscolha uma opcao:\n1 - Cadastro\n2 - Comprar seu carro\n3 - Comprar seu acessorio\n4 - Sair");
 		opcao = sc.nextInt();
 		
 		switch(opcao){
@@ -54,7 +55,6 @@ public class Senha_Concessionaria {
 			
 			System.out.println("\nDigite seu endereco: ");
 			endereco = sc.nextLine();
-			
 			
 			break;
 			
@@ -78,6 +78,11 @@ public class Senha_Concessionaria {
 			
 			System.out.println("Escolha a quantidade desse acessorio:");
 			quantidade = sc.nextInt();
+			break;
+			
+		case 4:
+			System.out.println("Tenha um Bom Dia!");
+			break;
 		}	
 		
 		}while(opcao != 4);
